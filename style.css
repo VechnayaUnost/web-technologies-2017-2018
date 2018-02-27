@@ -1,0 +1,115 @@
+.main_background {
+    background-color: #ede7f6;
+    margin: 0;
+}
+
+.top_background {
+    background-color: rgb(103, 58, 183);
+    height: 278px;
+}
+
+.Form {
+    background-color: #fff;
+    font-family: Roboto,RobotoDraft,Helvetica,Arial,sans-serif;
+    margin: auto;
+    position: relative;
+    top: -100px;
+    width: 640px;
+}
+
+.line{
+    background-color: rgb(179, 136, 255);
+    height: 8px;
+}
+
+.main{
+    color: rgba(0,0,0,.87);
+    margin: auto;
+    padding-left: 34px;
+    padding-right: 34px;
+}
+.caption{
+    font-size: 34px;
+}
+.text{
+    font-size: 13px;
+    margin-top: 22px;
+}
+
+.bold{
+    font-weight: 700;
+}
+.Red{
+    color: #db4437;
+}
+
+.header_size{
+    font-size: 20px;
+    padding-top: 16px;
+}
+
+input[type=text]{
+    border:none;
+    border-bottom: 2px solid #ede7f6;
+    width: 572px;
+}
+
+.select_towns{
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+    user-select: none;
+
+}
+
+.date{
+    color: rgba(0,0,0,0.38);
+    font-size: 12px;
+}
+
+.button{
+    background-color: #4285f4;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    font-size: 14px;
+    margin-top: 34px;
+    padding: 10px;
+}
+
+.no_choose{
+    color: #777;
+}
+
+.bottom_text{
+    color: rgba(0,0,0,0.54);
+    font-size: 12px;
+    padding: 10px 0 34px 0;
+
+}
+
+.footer_text{
+    color: rgb(100, 100, 100);
+    font-size: 12px;
+    text-align: center;
+}
+
+.G_Forms{
+    color: #000000;
+    cursor: pointer;
+    font-family: 'Product Sans',Arial,Helvetica,sans-serif;
+    font-size: 22px;
+    margin: 24px 0;
+    opacity: 0.26;
+    text-align: center;
+}
+
+.button_pencil{
+    background-color: rgb(179, 136, 255);
+    border: none;
+    float: right;
+    position: relative;
+    right: 16px;
+    top: 16px;
+}

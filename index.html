@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>title</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body class="main_background">
+    <div class="top_background">
+        <button class="button_pencil"><img src="../../Users/User/Downloads/pencil-edit-button.png"/></button>
+    </div>
+    <div class="Form">
+        <section class="line"></section>
+        <form class="main">
+            <br/><br/>
+            <header>
+                <span class="caption">Password request form</span>
+                <p class="text">The name and photo associated with your Google account will be recorded when you upload files and submit this form. Not <span class="bold">spas.work@gmail.com</span>? <a href="NAME">Switch account</a></p>
+                <p class="text Red">*Required</p>
+            </header>
+            <main>
+                <section>
+                    <p class="header_size">Please fill your name <span class="Red">*</span> </p>
+                    <input name="Name" type="text">
+                </section>
+                <section>
+                    <p class="header_size">What color you like <span class="Red">*</span> </p>
+                    <p><input type="radio" name="color" value="Red">Red</p>
+                    <p><input type="radio" name="color" value="Green">Green</p>
+                    <p><input type="radio" name="color" value="Blue">Blue</p>
+                    <p><input type="radio" name="color" value="Black">Black</p>
+                    <p><input type="radio" name="color" value="White">White</p>
+                    <p><input type="radio" name="color" value="Other">Other:
+                        <input name="other" type="text">
+                    </p>
+                </section>
+                <section>
+                    <p class="header_size">What town you like more?<span class="Red">*</span></p>
+                    <select class="select_towns">
+                        <option class="no_choose" value="" selected>Выбрать</option>
+                        <option value="Brest">Brest</option>
+                        <option value="Minsk">Minsk</option>
+                        <option value="Grodno">Grodno</option>
+                        <option value="Mogilev">Mogilev</option>
+                        <option value="Vitebsk">Vitebsk</option>
+                        <option value="Gomel">Gomel</option>
+                    </select>
+                </section>
+                <section>
+                    <p class="header_size">Please describe (at least 50 symbols on symbols) your favorite programming language<span class="Red">*</span></p>
+                    <input name="language" type="text">
+                </section>
+                <section>
+                    <p class="header_size">What years of education did you really like?<span class="Red">*</span></p>
+                    <p><input type="checkbox" name="years" value="First">First</p>
+                    <p><input type="checkbox" name="years" value="Second">Second</p>
+                    <p><input type="checkbox" name="years" value="Third">Third</p>
+                    <p><input type="checkbox" name="years" value="Forth">Forth</p>
+                </section>
+                <section>
+                    <p class="header_size">Please send any image<span class="Red">*</span></p>
+                    <input name="myFile" type="file">
+                </section>
+                <section>
+                    <p class="header_size">Set last Monday Monday<span class="Red">*</span></p>
+                    <p class="date">Date</p>
+                    <input name="date" type="date">
+                </section>
+            </main>
+            <input name="button" class="button" type="submit">
+            <p class="bottom_text">Never submit password through Google Forms.</p>
+        </form>
+    </div>
+    <footer>
+        <p class="footer_text">This content is neither created nor endorsed by Google. Report Abuse - Terms of Service - Additional Terms</p>
+        <p class="G_Forms">Google Forms</p>
+    </footer>
+</body>
+</html>
