@@ -1,0 +1,499 @@
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,img,abbr,acronym,address,big,cite,code,del,dfn,em,font,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,figcaption,figure,hgroup,menu,nav,summary,time,mark,audio,video,header,footer {
+    margin:0;
+    padding:0;
+    border:0;
+    font-weight:inherit;
+    font-style:inherit;
+    font-size:100%;
+    font-family:inherit;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+::selection {
+    background:#bd3632;
+    color:#fff;
+}
+
+.home{
+    font: 93.75% "proxima-nova-extra-condensed-1","proxima-nova-extra-condensed-2","Arial Narrow",Helvetica,Arial,sans-serif;
+    line-height:1.3333333em;
+}
+
+sup{
+    font-size: 0.6em;
+    left: -0.1em;
+    position: relative;
+    top: -0.6em;
+}
+
+ul {
+    list-style: none;
+    overflow:hidden;
+}
+
+.event_info{
+    background:#f8ebea;
+    float: right;
+    font: 400 1.133333em "ff-meta-serif-web-pro-1","ff-meta-serif-web-pro-2",serif;
+    margin: 19px 0 0 0;
+    padding:0.5em;
+    text-align: right;
+    text-transform:uppercase;
+}
+
+.event_info p:first-child{
+    color: #bd3632;
+}
+
+.header{
+    background:#fff;
+    overflow: hidden;
+    padding: 3.9216%;
+}
+
+.branding{
+    background: url(http://2012.newadventuresconf.com/assets/images/site/branding_768.png) no-repeat 0 0;
+    float: left;
+    height: 104px;
+    width: 220px;
+}
+
+.navigation_pri{
+    font-size:1.4667em;
+    line-height:1em;
+    list-style: none;
+    margin:-0.6818em 0 0 0;
+    overflow:hidden;
+    padding: 0 3.9216%;
+    position:relative;
+    text-transform:uppercase;
+}
+
+.navigation_pri li {
+    border:0;
+    float:left;
+    margin:0 1.5957% 0 0;
+    padding-bottom:7px;
+}
+
+.navigation_pri li a {
+    color:#000;
+    display:block;
+    padding:0.6818em 0;
+    text-decoration:none;
+}
+
+.navigation_pri li.cur a {
+    color: #bd3632;
+}
+
+.navigation_pri li a:hover,
+.navigation_pri li a:focus {
+    text-decoration:underline;
+}
+
+.navigation_pri li.cur a:hover,
+.navigation_pri li.cur a:focus {
+    text-decoration:none;
+}
+
+.navigation_pri li.register {
+    float:right;
+    margin:0;
+}
+
+.navigation_pri li.register a {
+    background:#bd3632;
+    border-radius: 5px 5px 0 0;
+    color:#fff;
+    padding:0.6818em;
+}
+
+.navigation_pri li.register a:hover,
+.navigation_pri li.register a:focus {
+    background:#000;
+    text-decoration:none;
+}
+
+.page_title {
+    background: url(http://2012.newadventuresconf.com/assets/images/site/pagetitle_home.jpg) no-repeat 0 0;
+    background-size: 100%;
+    color: #fff;
+    font-family: "proxima-nova-extra-condensed-1","proxima-nova-extra-condensed-2","Arial Narrow",Helvetica,Arial,sans-serif;
+    margin-bottom: 3.9216%;
+    padding: 25.98% 0 0 0;
+    position: relative;
+    top:-7px;
+}
+
+.page_title div {
+    bottom: 0;
+    left: 3.9216%;
+    position: absolute;
+    width: 28.75em;
+}
+
+.page_title p:first-child {
+    display: block;
+    font-size: 2.938em;
+    line-height: 1em;
+    margin-bottom: 0.17em;
+    text-transform: uppercase;
+}
+
+.page_title p:last-child {
+    font-size: 1.625em;
+    line-height: 1.111em;
+    margin: 0 0 7% 0;
+}
+
+.content_wrapper {
+    overflow: hidden;
+    padding: 0 3.9216%;
+}
+
+.speakers {
+    float: left;
+    width: 65.9574%;
+}
+
+.speakers nav ul {
+    margin: 0 0 2em 0;
+}
+
+.speakers nav ul li {
+    float:left;
+    margin:0 0 20px 0;
+    width:48.39%;
+}
+
+.speakers nav ul li:nth-child(2n+1) {
+    margin-left: 0;
+    width: 51.39%;
+}
+
+.speakers nav ul li article span {
+    float: left;
+    margin-right:10px;
+    width:20%;
+}
+
+.red_header {
+    color: #bd3632;
+    font-size: 2em;
+    line-height: 1em;
+    margin: 0 0 16px 0;
+    text-transform: uppercase;
+}
+
+.speaker {
+    float: left;
+    width: 100%;
+}
+
+.speaker p {
+    font: 400 30px "proxima-nova-extra-condensed-1","proxima-nova-extra-condensed-2","Arial Narrow",Helvetica,Arial,sans-serif;
+    line-height:1em;
+    margin: 6px 0 0 0;
+    text-transform: uppercase;
+}
+
+.speaker p:last-child {
+    color: #bd3632;
+    font: italic 14px "ff-meta-serif-web-pro-1","ff-meta-serif-web-pro-2",serif;
+    margin: 0.1em 0 0 0;
+    text-transform: none;
+}
+
+.speaker img {
+    width: 100%;
+    float: left;
+}
+
+.plus {
+    float:right;
+    width:31.91%;
+}
+
+.plus nav ul {
+    font-family: "ff-meta-serif-web-pro-1","ff-meta-serif-web-pro-2",Georgia,sans-serif;
+    margin: 0 0 2em 0;
+}
+
+.plus nav ul li {
+    font-size: 16px;
+    margin: 0 0 0.6667em 1em;
+}
+
+.plus nav ul li span {
+    color: #bd3632;
+    display: inline-block;
+    font-weight: 700;
+    margin-left: -16px;
+    width: 1em;
+}
+
+.sponsors {
+    background: #f0f0f0;
+    border-top: 1px solid #999;
+    margin-top: 3em;
+    padding: 2.08333% 3.9216%;
+}
+
+.sponsors nav ul li {
+    background:#fff;
+    float:left;
+    margin:0 0 2.08333% 0;
+    position:relative;
+    width:48.936%;
+}
+
+.sponsors nav ul li p {
+    background: #bd3632;
+    color: #fff;
+    font-size: 0.93333em;
+    font-weight: 700;
+    left: 1px;
+    margin-bottom: 0.75em;
+    padding: 0.2em;
+    position: absolute;
+    text-transform: uppercase;
+    top: 1px;
+}
+
+.sponsors nav ul li a {
+    border:1px solid #ccc;
+    display:block;
+    padding:10%;
+}
+
+.sponsors nav ul li img {
+    width:100%;
+}
+
+.sponsors nav ul li {
+    margin:0 0 2.08333% 2.08333%;
+    width:23.404%;
+}
+
+.sponsors nav ul li:nth-child(4n+1) {
+    margin-left:0;
+}
+
+.sponsors nav ul li a:hover,
+.sponsors nav ul li a:focus {
+    border-color:#bd3632;
+}
+
+.footer {
+    background:#bd3632;
+    color:#de9a98;
+    font-family: "ff-meta-serif-web-pro-1","ff-meta-serif-web-pro-2",serif;
+    overflow:hidden;
+    padding: 16px 3.9216%;
+}
+
+.footer a {
+    color:#de9a98;
+}
+
+.footer p.twitter {
+    float:right;
+    text-align:right;
+}
+
+.footer p.twitter a.follow {
+    background:url(http://2012.newadventuresconf.com/assets/images/site/icons/twitter.png) no-repeat 0 center;
+    color:#fff;
+    display:block;
+    margin-bottom: 0.8em;
+    padding-left:1.8em;
+}
+
+.footer p.twitter span {
+    font-size:0.86667em;
+}
+
+.footer nav ul {
+    font-size:0.86667em;
+    line-height:1.2em;
+}
+
+.footer nav ul li {
+    border-left:1px solid #de9a98;
+    float:left;
+    padding:0 0.5em;
+}
+
+.copyright {
+    color:#fff;
+    margin-bottom: 16px;
+}
+
+.footer nav ul li:first-child {
+    border:0;
+    padding-left:0;
+}
+
+.footer a:hover,
+.footer a:focus {
+    color:#fff;
+}
+
+.footer p.twitter a.follow:hover,
+.footer p.twitter a.follow:focus {
+    opacity:0.5;
+}
+
+@media screen and (max-width: 768px) {
+    .header {
+        background: #000;
+        overflow: unset;
+        padding: 0;
+    }
+
+    .branding {
+        background: url(http://2012.newadventuresconf.com/assets/images/site/branding_base.png) no-repeat 0 1.5em;
+        float: none;
+        font-size: 1em;
+        height: 96px;
+        margin: 0 0 0 3.9216%;
+        padding: 1em 0;
+    }
+
+    .image{
+        display: none;
+    }
+
+    .event_info{
+        float: none;
+        margin: 0 0 0.8824em 0;
+        text-align: left;
+    }
+
+    .event_info p:first-child{
+        color: #000;
+    }
+
+    .page_title{
+        display: none;
+    }
+
+    .navigation_pri {
+        font-size: 15px;
+        margin: 0 0 3em 0;
+        text-transform: none;
+    }
+
+    .navigation_pri li {
+        border-top:1px dotted #ccc;
+        float: none;
+        margin:0;
+        padding: 0;
+    }
+
+    .navigation_pri li:last-child {
+        border-bottom:1px dotted #ccc;
+    }
+
+    .navigation_pri li a {
+        color: #bd3632;
+        font-family: "ff-meta-serif-web-pro-1","ff-meta-serif-web-pro-2",serif;
+        padding:0.2em;
+    }
+
+    .navigation_pri li.cur,
+    .navigation_pri li.cur + li {
+        border-top: solid #bd3632;
+    }
+
+    .navigation_pri li.cur a {
+        background:#bd3632;
+        color:#fff;
+    }
+
+    .navigation_pri li.register {
+        float:none;
+    }
+    .navigation_pri li.register a {
+        background:#fff;
+        color:#bd3632;
+        padding:0.2em;
+    }
+
+    .navigation_pri li.register a:hover,
+    .navigation_pri li.register a:focus {
+        background:#fff;
+    }
+
+    .navigation_pri li a:hover,
+    .navigation_pri li a:focus {
+        color: #000;
+        text-decoration:none;
+    }
+
+    .navigation_pri li.cur a:hover,
+    .navigation_pri li.cur a:focus {
+        color: #fff;
+        text-decoration:none;
+    }
+
+    .speakers{
+        float: none;
+        width: auto;
+    }
+
+    .speakers nav ul li {
+        float:none;
+        margin: 0.666em 0 0 0;
+        overflow: hidden;
+        width:auto;
+    }
+
+    .speakers nav ul li:nth-child(2n+1) {
+        margin: 0.666em 0 0 0;
+        width: auto;
+    }
+
+    .speakers nav ul li article span {
+        width: 14.29%;
+    }
+
+    .speaker p {
+        font-size: 1.6923em;
+        margin: 0;
+    }
+
+    .speaker p:last-child {
+        font-size: 0.8667em;
+    }
+
+    .plus {
+        width: auto;
+    }
+
+    .sponsors nav ul li {
+        width: 48.936%;
+    }
+
+    .sponsors nav ul li:nth-child(2n+1) {
+        margin-left:0;
+    }
+
+    .footer p.twitter {
+        float: none;
+        margin-bottom: 1em;
+        text-align: unset;
+    }
+
+    .footer p.twitter a.follow {
+        margin-bottom: 0;
+    }
+
+    .footer nav ul li {
+        border-left: none;
+        float:none;
+        padding:0;
+    }
+}
