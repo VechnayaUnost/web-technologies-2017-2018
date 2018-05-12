@@ -1,4 +1,8 @@
 "use strict";
+
+const cont = document.getElementById('content');
+const uname = document.getElementById('uname');
+
 function PressEnter(your_text, your_event) {
     if(your_text != "" && your_event.keyCode == 13)
         search();
@@ -12,60 +16,89 @@ function getInfo(uName) {
 function request(url) {
     return fetch(url)
         .then(response =>{
-            if (document.getElementById('err')) {
-                document.getElementById('content').removeChild(document.getElementById('err'));
-            }
             if (response.status >= 200 && response.status < 400)
                 return response.json();
-            else{
-                const err = document.createElement('h1');
-                err.innerText=`User with login ${document.getElementById('uname').value} does not exist`;
-                document.getElementById('content').appendChild(err);
-                err.id = 'err';
-            }
+            else createError();
         })
 }
 
+function createError() {
+    const err = document.createElement('h1');
+    err.innerText=`User with login ${uname.value} does not exist`;
+    cont.appendChild(err);
+    err.id = 'err';
+}
+
+function create(element) {
+    return document.createElement(element);
+}
+
+function add(container, element) {
+    if (element.innerText!=="")
+        return container.appendChild(element);
+}
+
+function appText(name, content) {
+    if(!content)
+        return name.innerText==null;
+    name.innerText=content;
+}
+
+function appImg(name, content) {
+    name.src=content;
+}
+
+function appLink(name, content) {
+    if(!content)
+        return name.innerText==null;
+    name.innerText=content;
+}
+
+function clear(nameId) {
+    if (document.getElementById(nameId))
+        cont.removeChild(document.getElementById(nameId));
+}
+
 function createDiv(user) {
-    document.getElementById('uname').value = "";
-    const cont = document.getElementById('content');
-    if (document.getElementById('info'))
-        cont.removeChild(document.getElementById('info'));
+    uname.value = "";
+    clear('info');
     const container = document.createElement('div');
     cont.appendChild(container);
     container.id = 'info';
-    let elements = [document.createElement('img'), document.createElement('h1'),
-        document.createElement('h2'), document.createElement('h3'), document.createElement('h3'),
-        document.createElement('h4'), document.createElement('a'), document.createElement('a')];
-    elements[0].src = user["avatar_url"];
-    elements[1].innerText = user["name"];
-    elements[2].innerText = user["login"];
-    elements[3].innerText = user["bio"];
-    elements[4].innerText = user["company"];
-    elements[5].innerText = user["location"];
-    elements[6].innerText = user["email"];
-    elements[7].innerText = user["blog"];
-    for(let m = 1; m < elements.length; m++){
-        if(elements[m].innerText === ""){
-            elements.splice(m, 1);
-            m--;
-        }
-    }
-    if (container.childNodes) {
-        elements.map((item) => {
-            container.appendChild(item);
-        });
-    }
-    else{
-        while (container.firstChild)
-            container.removeChild(container.firstChild);
-        elements.map((item) => {
-            container.appendChild(item);
-        });
-    }
+
+    let avatar = create('img');
+    let name = create('h1');
+    let login = create('h2');
+    let bio = create('h3');
+    let company = create('h3');
+    let location = create('h4');
+    let email = create('a');
+    let blog = create('a');
+    let fragment = document.createDocumentFragment();
+
+    appImg(avatar, user.avatar_url);
+    appText(name, user.name);
+    appText(login, user.login);
+    appText(bio, user.bio);
+    appText(company, user.company);
+    appText(location, user.location);
+    appLink(email, user.email);
+    appLink(blog, user.blog);
+
+    fragment.appendChild(avatar);
+    add(fragment, name);
+    add(fragment, login);
+    add(fragment, bio);
+    add(fragment, company);
+    add(fragment, location);
+    add(fragment, email);
+    add(fragment, blog);
+    add(container, fragment);
 }
+
 function search() {
-    getInfo(document.getElementById('uname').value)
+    clear('err');
+    getInfo(uname.value)
         .then((user) =>
             createDiv(user)
         )
