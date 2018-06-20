@@ -1,8 +1,11 @@
+import {fetchSuccess} from '../actions/action'
+
 const initialState = {
     userImg: '',
     userName: '',
     userLogin: '',
     userBio: '',
+    userBlog: '',
     userCompany: '',
     userLocation: '',
     userEmail: '',
@@ -10,13 +13,13 @@ const initialState = {
 };
 
 const userInfo = (state = initialState, action) => {
-    switch (action.type){
-        case 'CHANGE_INPUT':
-            return Object.assign({}, state, {inputValue: action.user});
-        case 'ON_SUBMIT':
-            return Object.assign({}, state, action.data);
-        default:
+    switch (action.type) {
+        case 'GET_SUCCESS':
+            console.log(action);
+            return Object.assign({}, state, action.data );
+        default: {
             return state;
+        }
     }
 };
 

@@ -1,6 +1,4 @@
 import React from 'react';
-
-import IconDescription from "./iconText";
 import {connect} from "react-redux";
 
 
@@ -10,27 +8,19 @@ function User(props) {
             <img src={ props.avatar_url } alt={ props.name } />
             <h2>{ props.name }</h2>
             <h3>{ props.login }</h3>
-            <h3>{ props.bio }</h3>
-            <IconDescription text={props.location} />
+
         </div>
     );
 }
 
 const mapStateToProps = (state) => {
     return{
-        name: state.name,
-        avatar_url: state.avatar_url,
-        login: state.login,
-        location: state.location,
-        bio: state.bio
+        name: state.userName,
+        avatar_url: state.userImg,
+        login: state.userLogin,
     };
 };
 
-const mapDispatchToProps = (dispatch) => {
-    return {
 
-    }
-};
-
-export default connect(mapStateToProps, mapDispatchToProps)(User);
+export default connect(mapStateToProps)(User);
 
