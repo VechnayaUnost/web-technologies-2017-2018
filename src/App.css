@@ -1,0 +1,45 @@
+.icon{
+  margin-right: 10px;
+}
+
+.main-info{
+  width: 35%;
+}
+
+.react-tabs{
+  padding: 7% 0 0 3% ;
+  width: 100%;
+}
+
+.container{
+  display: flex;
+}
+
+img{
+  border-radius: 5%;
+  width: 100%;
+}
+p{
+  opacity: 0.5;
+}
+
+.user-name{
+  padding-top: 30px;
+}
+
+.user-name p{
+  font-size: larger;
+  margin-top: unset;
+}
+
+.user-name h2{
+  margin-bottom: unset;
+}
+
+.react-tabs__tab-panel--selected{
+  float: right;
+}
+
+
+
+
