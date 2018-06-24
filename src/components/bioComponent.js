@@ -1,18 +1,17 @@
 import React from 'react';
 import { connect } from "react-redux";
 
-
 function BioComponent(props) {
     return (
-        <div className="BioComponent">
-            <h2>{props.bio}</h2>
+        <div>
+            <p>{props.bio}</p>
         </div>
     );
 }
 
 const mapStateToProps = (state) => {
     return {
-        bio: state.userBio
+        bio: state.userInfo.userBio
     };
 };
 

@@ -1,5 +1,3 @@
-import {fetchSuccess} from '../actions/action'
-
 const initialState = {
     userImg: '',
     userName: '',

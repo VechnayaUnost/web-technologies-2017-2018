@@ -1,18 +1,30 @@
 import React from 'react';
 import { connect } from "react-redux";
 import ImageComponent from './ImageComponent';
+import emailIc from '@fortawesome/fontawesome-free-solid/faEnvelope'
+import socialIc from '@fortawesome/fontawesome-free-solid/faUser'
+import locationIc from '@fortawesome/fontawesome-free-solid/faMapMarker'
+import companyIc from '@fortawesome/fontawesome-free-solid/faBuilding'
 
 function BotComponent(props) {
+    const email = props.userEmail;
+    const blog = props.userSocial;
+    const location = props.userLocation;
+    const company = props.userCompany;
     return (
-        <div className="BioComponent">
-            <ImageComponent icon={props.userSocial}></ImageComponent>
-            <h6>{props.userSocial}</h6>
-            <ImageComponent icon={props.userCompany}></ImageComponent>
-            <h6>{props.userCompany}</h6>
-            <ImageComponent icon={props.userLocation}></ImageComponent>
-            <h6>{props.userLocation}</h6>
-            <ImageComponent icon={props.userEmail}></ImageComponent>
-            <h6>{props.userEmail}</h6>
+        <div className="AdditionalUserInfo">
+        {
+            blog != null && blog!=="" && <a><ImageComponent icon={socialIc} />{props.userSocial}</a>
+        }
+        {
+            email != null && email!=="" && <a><ImageComponent icon={emailIc} />{props.userEmail}</a>
+        }
+        {
+            location != null && location!=="" && <h5><ImageComponent icon={locationIc} />{props.userLocation}</h5>
+        }
+        {
+            company != null && company!=="" &&<h5><ImageComponent icon={companyIc} />{props.userCompany}</h5>
+        }
         </div>
     );
 }
@@ -21,12 +33,11 @@ const mapStateToProps = (state) => {
     console.log(state);
 
     return {
-        userEmail: state.userEmail,
-        userLocation: state.userLocation,
-        userSocial: state.userSocial,
-        userCompany: state.userCompany,
+        userEmail: state.userInfo.userEmail,
+        userLocation: state.userInfo.userLocation,
+        userSocial: state.userInfo.userSocial,
+        userCompany: state.userInfo.userCompany,
     };
 };
-
 
 export default connect(mapStateToProps)(BotComponent);

@@ -1,28 +1,45 @@
-.App {
-  text-align: center;
+.icon{
+  margin-right: 10px;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+.main-info{
+  width: 35%;
 }
 
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
+.react-tabs{
+  padding: 7% 0 0 3% ;
+  width: 100%;
 }
 
-.App-title {
-  font-size: 1.5em;
+.container{
+  display: flex;
 }
 
-.App-intro {
-  font-size: large;
+img{
+  border-radius: 5%;
+  width: 100%;
+}
+p{
+  opacity: 0.5;
 }
 
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+.user-name{
+  padding-top: 30px;
 }
+
+.user-name p{
+  font-size: larger;
+  margin-top: unset;
+}
+
+.user-name h2{
+  margin-bottom: unset;
+}
+
+.react-tabs__tab-panel--selected{
+  float: right;
+}
+
+
+
+

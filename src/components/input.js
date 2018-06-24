@@ -1,6 +1,8 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import { fetchSuccess } from '../actions/action'
+import {sendRequestFollowers} from '../githubAPI/request'
+import {sendRequestRepos} from '../githubAPI/request'
 
 class Input extends React.Component {
     constructor(props) {
@@ -9,9 +11,9 @@ class Input extends React.Component {
             text: ''
         };
     }
-    PressEnter = (event) => {
-        if (this.value !== "" && event.keyCode === 13)
-            this.props.newValue;
+    pressEnter(e) {
+        if(e.keyCode === 13 && e.shiftKey === false)
+            this.searchUser();
     };
 
     textChange(e) {
@@ -23,18 +25,18 @@ class Input extends React.Component {
 
     searchUser() {
         this.props.fetchSuccess(this.state.text);
+        this.props.sendRequestFollowers(this.state.text);
+        this.props.sendRequestRepos(this.state.text);
     }
 
     render() {
         return (
             <div className='inputs'>
-                <input id='inputText' type='text' onChange={this.textChange.bind(this)} placeholder="Username" />
+                <input id='inputText' type='text' onChange={this.textChange.bind(this)} onKeyDown={this.pressEnter.bind(this)} placeholder="Username" />
                 <button onClick={this.searchUser.bind(this)}>Search</button>
             </div>
         );
     }
 }
 
-
-
-export default connect(null, { fetchSuccess })(Input);
+export default connect(null, { fetchSuccess,sendRequestFollowers,sendRequestRepos })(Input);
