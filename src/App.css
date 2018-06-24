@@ -1,0 +1,67 @@
+.icon{
+  margin-right: 10px;
+}
+
+.main{
+  display: flex;
+}
+
+.react-tabs{
+  padding: 7% 0 0 3% ;
+  width: 100%;
+}
+
+.user-section{
+  width: 35%;
+}
+
+img{
+  border-radius: 5%;
+  width: 100%;
+}
+p{
+  opacity: 0.5;
+}
+
+.user-name{
+  padding-top: 30px;
+}
+
+.user-name p{
+  font-size: larger;
+  margin-top: unset;
+}
+
+.user-name h2{
+  margin-bottom: unset;
+}
+
+.react-tabs__tab-panel--selected{
+  float: right;
+}
+
+.repo {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-bottom: 1px solid #bababa;
+  width: 98%;
+}
+
+.repo-description {
+  max-width: 55%;
+}
+
+.repo-lang {
+  margin-right: 35px;
+}
+
+.button {
+  border: none;
+}
+
+.active {
+  background: #ffc9c9;
+}
+
+
