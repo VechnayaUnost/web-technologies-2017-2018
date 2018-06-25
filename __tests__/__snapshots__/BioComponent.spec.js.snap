@@ -1,0 +1,60 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`BioComponent component test BioComponent component rendered succesfully 1`] = `
+<Connect(BioComponent)
+  store={
+    Object {
+      "clearActions": [Function],
+      "dispatch": [Function],
+      "getActions": [Function],
+      "getState": [Function],
+      "replaceReducer": [Function],
+      "subscribe": [Function],
+    }
+  }
+>
+  <BioComponent
+    bio="Neytiri te Tskaha Mo'at’ite is the Na'vi princess of the Omaticaya clan.She is the second-born daughter of Eytukan and Mo'at and younger sister of Sylwanin. She meets Jake Sully in a Pandoran forest, helping him when he is attacked by a pack of viperwolves. Neytiri soon becomes Jake's teacher and helps him to complete several tasks. Eventually, they fall in love and mate under the Trees of Voices. Neytiri fights alongside Jake in the Assault on the Tree of Souls and saves him from being killed by Miles Quaritch. She will be the future Tsahìk of the clan, with her mate, Jake, as Olo'eyktan."
+    dispatch={[Function]}
+    store={
+      Object {
+        "clearActions": [Function],
+        "dispatch": [Function],
+        "getActions": [Function],
+        "getState": [Function],
+        "replaceReducer": [Function],
+        "subscribe": [Function],
+      }
+    }
+    storeSubscription={
+      Subscription {
+        "listeners": Object {
+          "clear": [Function],
+          "get": [Function],
+          "notify": [Function],
+          "subscribe": [Function],
+        },
+        "onStateChange": [Function],
+        "parentSub": undefined,
+        "store": Object {
+          "clearActions": [Function],
+          "dispatch": [Function],
+          "getActions": [Function],
+          "getState": [Function],
+          "replaceReducer": [Function],
+          "subscribe": [Function],
+        },
+        "unsubscribe": [Function],
+      }
+    }
+  >
+    <div
+      className="BioComponent"
+    >
+      <h2>
+        Neytiri te Tskaha Mo'at’ite is the Na'vi princess of the Omaticaya clan.She is the second-born daughter of Eytukan and Mo'at and younger sister of Sylwanin. She meets Jake Sully in a Pandoran forest, helping him when he is attacked by a pack of viperwolves. Neytiri soon becomes Jake's teacher and helps him to complete several tasks. Eventually, they fall in love and mate under the Trees of Voices. Neytiri fights alongside Jake in the Assault on the Tree of Souls and saves him from being killed by Miles Quaritch. She will be the future Tsahìk of the clan, with her mate, Jake, as Olo'eyktan.
+      </h2>
+    </div>
+  </BioComponent>
+</Connect(BioComponent)>
+`;

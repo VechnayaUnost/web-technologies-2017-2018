@@ -1,0 +1,47 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Input component test Input component rendered succesfully 1`] = `
+<Connect(Input)
+  store={
+    Object {
+      "clearActions": [Function],
+      "dispatch": [Function],
+      "getActions": [Function],
+      "getState": [Function],
+      "replaceReducer": [Function],
+      "subscribe": [Function],
+    }
+  }
+>
+  <Input
+    fetchUserRequest={[Function]}
+    store={
+      Object {
+        "clearActions": [Function],
+        "dispatch": [Function],
+        "getActions": [Function],
+        "getState": [Function],
+        "replaceReducer": [Function],
+        "subscribe": [Function],
+      }
+    }
+  >
+    <div
+      className="inputs"
+    >
+      <input
+        id="inputText"
+        onChange={[Function]}
+        onKeyDown={[Function]}
+        placeholder="Username"
+        type="text"
+      />
+      <button
+        onClick={[Function]}
+      >
+        Search
+      </button>
+    </div>
+  </Input>
+</Connect(Input)>
+`;

@@ -1,0 +1,366 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`UserRepositories component test UserRepositories component rendered succesfully 1`] = `
+<BrowserRouter>
+  <Router
+    history={
+      Object {
+        "action": "POP",
+        "block": [Function],
+        "createHref": [Function],
+        "go": [Function],
+        "goBack": [Function],
+        "goForward": [Function],
+        "length": 1,
+        "listen": [Function],
+        "location": Object {
+          "hash": "",
+          "pathname": "blank",
+          "search": "",
+          "state": undefined,
+        },
+        "push": [Function],
+        "replace": [Function],
+      }
+    }
+  >
+    <Connect(UserRepositoriesComponent)
+      store={
+        Object {
+          "clearActions": [Function],
+          "dispatch": [Function],
+          "getActions": [Function],
+          "getState": [Function],
+          "replaceReducer": [Function],
+          "subscribe": [Function],
+        }
+      }
+    >
+      <UserRepositoriesComponent
+        fetchUserReposRequest={[Function]}
+        repos={
+          Array [
+            Object {
+              "archived": false,
+              "description": "Creates Avatar skeleton with some preinstalled options",
+              "fork": true,
+              "language": "C#",
+              "name": "AvatarSkeleton",
+              "stargazers_count": 321,
+              "watchers_count": 123,
+            },
+            Object {
+              "archived": true,
+              "description": "Avatar mount connection is easier with this tool",
+              "fork": false,
+              "language": "Java",
+              "name": "AvatarMountConnection",
+              "stargazers_count": 543,
+              "watchers_count": 345,
+            },
+            Object {
+              "archived": false,
+              "description": "Barrack project for human soldiers",
+              "fork": false,
+              "language": "Paper&Pen",
+              "name": "SoldiersBarracks",
+              "stargazers_count": 2,
+              "watchers_count": 1,
+            },
+          ]
+        }
+        store={
+          Object {
+            "clearActions": [Function],
+            "dispatch": [Function],
+            "getActions": [Function],
+            "getState": [Function],
+            "replaceReducer": [Function],
+            "subscribe": [Function],
+          }
+        }
+        storeSubscription={
+          Subscription {
+            "listeners": Object {
+              "clear": [Function],
+              "get": [Function],
+              "notify": [Function],
+              "subscribe": [Function],
+            },
+            "onStateChange": [Function],
+            "parentSub": undefined,
+            "store": Object {
+              "clearActions": [Function],
+              "dispatch": [Function],
+              "getActions": [Function],
+              "getState": [Function],
+              "replaceReducer": [Function],
+              "subscribe": [Function],
+            },
+            "unsubscribe": [Function],
+          }
+        }
+        userLogin="GoGoPandora"
+      >
+        <div>
+          <ul>
+            <li>
+              <Link
+                replace={false}
+                to="/user/followers"
+              >
+                <a
+                  href="/user/followers"
+                  onClick={[Function]}
+                >
+                  User followers
+                </a>
+              </Link>
+            </li>
+            <li>
+              <Link
+                replace={false}
+                to="/user/repos"
+              >
+                <a
+                  href="/user/repos"
+                  onClick={[Function]}
+                >
+                  User repositories
+                </a>
+              </Link>
+            </li>
+          </ul>
+          <h2>
+            Repositories
+          </h2>
+          <select
+            className="repos-type"
+            onChange={[Function]}
+            value="All"
+          >
+            <option
+              value="All"
+            >
+              All
+            </option>
+            <option
+              value="Forks"
+            >
+              Forks
+            </option>
+            <option
+              value="Archived"
+            >
+              Archived
+            </option>
+          </select>
+          <select
+            className="repos-lang"
+            onChange={[Function]}
+            value="All"
+          >
+            <option
+              value="All"
+            >
+              All
+            </option>
+            <option
+              value="C#"
+            >
+              C#
+            </option>
+            <option
+              value="Java"
+            >
+              Java
+            </option>
+            <option
+              value="Paper&Pen"
+            >
+              Paper&Pen
+            </option>
+          </select>
+          <div>
+            <h3>
+              AvatarSkeleton
+            </h3>
+            <span>
+              Creates Avatar skeleton with some preinstalled options
+            </span>
+            <br />
+            <span>
+              Stars: 
+              321
+            </span>
+            <br />
+            <span>
+              Watchers: 
+              123
+            </span>
+          </div>
+          <div>
+            <h3>
+              AvatarMountConnection
+            </h3>
+            <span>
+              Avatar mount connection is easier with this tool
+            </span>
+            <br />
+            <span>
+              Stars: 
+              543
+            </span>
+            <br />
+            <span>
+              Watchers: 
+              345
+            </span>
+          </div>
+          <div>
+            <h3>
+              SoldiersBarracks
+            </h3>
+            <span>
+              Barrack project for human soldiers
+            </span>
+            <br />
+            <span>
+              Stars: 
+              2
+            </span>
+            <br />
+            <span>
+              Watchers: 
+              1
+            </span>
+          </div>
+        </div>
+      </UserRepositoriesComponent>
+    </Connect(UserRepositoriesComponent)>
+  </Router>
+</BrowserRouter>
+`;
+
+exports[`UserRepositories component test UserRepositories rendered without user login 1`] = `
+<BrowserRouter>
+  <Router
+    history={
+      Object {
+        "action": "POP",
+        "block": [Function],
+        "createHref": [Function],
+        "go": [Function],
+        "goBack": [Function],
+        "goForward": [Function],
+        "length": 1,
+        "listen": [Function],
+        "location": Object {
+          "hash": "",
+          "pathname": "blank",
+          "search": "",
+          "state": undefined,
+        },
+        "push": [Function],
+        "replace": [Function],
+      }
+    }
+  >
+    <Connect(UserRepositoriesComponent)
+      store={
+        Object {
+          "clearActions": [Function],
+          "dispatch": [Function],
+          "getActions": [Function],
+          "getState": [Function],
+          "replaceReducer": [Function],
+          "subscribe": [Function],
+        }
+      }
+    >
+      <UserRepositoriesComponent
+        fetchUserReposRequest={[Function]}
+        repos={
+          Array [
+            Object {
+              "description": "Creates Avatar skeleton with some preinstalled options",
+              "name": "AvatarSkeleton",
+              "stargazers_count": 321,
+              "watchers_count": 123,
+            },
+          ]
+        }
+        store={
+          Object {
+            "clearActions": [Function],
+            "dispatch": [Function],
+            "getActions": [Function],
+            "getState": [Function],
+            "replaceReducer": [Function],
+            "subscribe": [Function],
+          }
+        }
+        storeSubscription={
+          Subscription {
+            "listeners": Object {
+              "clear": [Function],
+              "get": [Function],
+              "notify": [Function],
+              "subscribe": [Function],
+            },
+            "onStateChange": [Function],
+            "parentSub": undefined,
+            "store": Object {
+              "clearActions": [Function],
+              "dispatch": [Function],
+              "getActions": [Function],
+              "getState": [Function],
+              "replaceReducer": [Function],
+              "subscribe": [Function],
+            },
+            "unsubscribe": [Function],
+          }
+        }
+        userLogin=""
+      >
+        <div>
+          <ul>
+            <li>
+              <Link
+                replace={false}
+                to="/user/followers"
+              >
+                <a
+                  href="/user/followers"
+                  onClick={[Function]}
+                >
+                  User followers
+                </a>
+              </Link>
+            </li>
+            <li>
+              <Link
+                replace={false}
+                to="/user/repos"
+              >
+                <a
+                  href="/user/repos"
+                  onClick={[Function]}
+                >
+                  User repositories
+                </a>
+              </Link>
+            </li>
+          </ul>
+          <h2>
+            Repositories
+          </h2>
+          <h3>
+            Empty
+          </h3>
+        </div>
+      </UserRepositoriesComponent>
+    </Connect(UserRepositoriesComponent)>
+  </Router>
+</BrowserRouter>
+`;

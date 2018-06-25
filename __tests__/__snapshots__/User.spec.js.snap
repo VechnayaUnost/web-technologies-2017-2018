@@ -1,0 +1,69 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`User component test User component rendered succesfully 1`] = `
+<Connect(User)
+  store={
+    Object {
+      "clearActions": [Function],
+      "dispatch": [Function],
+      "getActions": [Function],
+      "getState": [Function],
+      "replaceReducer": [Function],
+      "subscribe": [Function],
+    }
+  }
+>
+  <User
+    avatar_url="https://vignette.wikia.nocookie.net/james-camerons-avatar/images/2/2c/Neytiri_Avatar.jpg/revision/latest/scale-to-width-down/640?cb=20140428095608&path-prefix=ru"
+    dispatch={[Function]}
+    login="GoGoPandora"
+    name="Neytiri"
+    store={
+      Object {
+        "clearActions": [Function],
+        "dispatch": [Function],
+        "getActions": [Function],
+        "getState": [Function],
+        "replaceReducer": [Function],
+        "subscribe": [Function],
+      }
+    }
+    storeSubscription={
+      Subscription {
+        "listeners": Object {
+          "clear": [Function],
+          "get": [Function],
+          "notify": [Function],
+          "subscribe": [Function],
+        },
+        "onStateChange": [Function],
+        "parentSub": undefined,
+        "store": Object {
+          "clearActions": [Function],
+          "dispatch": [Function],
+          "getActions": [Function],
+          "getState": [Function],
+          "replaceReducer": [Function],
+          "subscribe": [Function],
+        },
+        "unsubscribe": [Function],
+      }
+    }
+  >
+    <div
+      className="User"
+    >
+      <img
+        alt="Neytiri"
+        src="https://vignette.wikia.nocookie.net/james-camerons-avatar/images/2/2c/Neytiri_Avatar.jpg/revision/latest/scale-to-width-down/640?cb=20140428095608&path-prefix=ru"
+      />
+      <h2>
+        Neytiri
+      </h2>
+      <h3>
+        GoGoPandora
+      </h3>
+    </div>
+  </User>
+</Connect(User)>
+`;

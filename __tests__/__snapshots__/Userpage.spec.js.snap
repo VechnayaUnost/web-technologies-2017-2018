@@ -1,0 +1,37 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Userpage component test Userpage component rendered succesfully 1`] = `
+<React.Fragment>
+  <ul>
+    <li>
+      <Link
+        replace={false}
+        to="/user/followers"
+      >
+        User followers
+      </Link>
+    </li>
+    <li>
+      <Link
+        replace={false}
+        to="/user/repos"
+      >
+        User repositories
+      </Link>
+    </li>
+  </ul>
+  <Connect(Input) />
+  <div
+    className="main"
+  >
+    <section
+      className="user-section"
+    >
+      <Connect(User) />
+      <Connect(BioComponent) />
+      <Connect(BotComponent) />
+      <EditComponent />
+    </section>
+  </div>
+</React.Fragment>
+`;
