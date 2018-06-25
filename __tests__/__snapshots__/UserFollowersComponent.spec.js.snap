@@ -1,0 +1,249 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`UserFollowers component test UserFollowers component rendered succesfully 1`] = `
+<BrowserRouter>
+  <Router
+    history={
+      Object {
+        "action": "POP",
+        "block": [Function],
+        "createHref": [Function],
+        "go": [Function],
+        "goBack": [Function],
+        "goForward": [Function],
+        "length": 1,
+        "listen": [Function],
+        "location": Object {
+          "hash": "",
+          "pathname": "blank",
+          "search": "",
+          "state": undefined,
+        },
+        "push": [Function],
+        "replace": [Function],
+      }
+    }
+  >
+    <Connect(UserFollowersComponent)
+      store={
+        Object {
+          "clearActions": [Function],
+          "dispatch": [Function],
+          "getActions": [Function],
+          "getState": [Function],
+          "replaceReducer": [Function],
+          "subscribe": [Function],
+        }
+      }
+    >
+      <UserFollowersComponent
+        fetchUserFollowersRequest={[Function]}
+        followers={
+          Array [
+            Object {
+              "avatar_url": "https://vokrug.tv/pic/person/2/3/8/8/23887ed0f336731e4c62eedcb25bf4d0.jpeg",
+              "login": "FakeAvatar1337",
+            },
+          ]
+        }
+        store={
+          Object {
+            "clearActions": [Function],
+            "dispatch": [Function],
+            "getActions": [Function],
+            "getState": [Function],
+            "replaceReducer": [Function],
+            "subscribe": [Function],
+          }
+        }
+        storeSubscription={
+          Subscription {
+            "listeners": Object {
+              "clear": [Function],
+              "get": [Function],
+              "notify": [Function],
+              "subscribe": [Function],
+            },
+            "onStateChange": [Function],
+            "parentSub": undefined,
+            "store": Object {
+              "clearActions": [Function],
+              "dispatch": [Function],
+              "getActions": [Function],
+              "getState": [Function],
+              "replaceReducer": [Function],
+              "subscribe": [Function],
+            },
+            "unsubscribe": [Function],
+          }
+        }
+        userLogin="GoGoPandora"
+      >
+        <div>
+          <ul>
+            <li>
+              <Link
+                replace={false}
+                to="/user/followers"
+              >
+                <a
+                  href="/user/followers"
+                  onClick={[Function]}
+                >
+                  User followers
+                </a>
+              </Link>
+            </li>
+            <li>
+              <Link
+                replace={false}
+                to="/user/repos"
+              >
+                <a
+                  href="/user/repos"
+                  onClick={[Function]}
+                >
+                  User repositories
+                </a>
+              </Link>
+            </li>
+          </ul>
+          <h2>
+            Followers
+          </h2>
+          <div>
+            <h3>
+              FakeAvatar1337
+            </h3>
+            <img
+              alt="user avatar"
+              src="https://vokrug.tv/pic/person/2/3/8/8/23887ed0f336731e4c62eedcb25bf4d0.jpeg"
+            />
+          </div>
+        </div>
+      </UserFollowersComponent>
+    </Connect(UserFollowersComponent)>
+  </Router>
+</BrowserRouter>
+`;
+
+exports[`UserFollowers component test UserFollowers rendered without user login 1`] = `
+<BrowserRouter>
+  <Router
+    history={
+      Object {
+        "action": "POP",
+        "block": [Function],
+        "createHref": [Function],
+        "go": [Function],
+        "goBack": [Function],
+        "goForward": [Function],
+        "length": 1,
+        "listen": [Function],
+        "location": Object {
+          "hash": "",
+          "pathname": "blank",
+          "search": "",
+          "state": undefined,
+        },
+        "push": [Function],
+        "replace": [Function],
+      }
+    }
+  >
+    <Connect(UserFollowersComponent)
+      store={
+        Object {
+          "clearActions": [Function],
+          "dispatch": [Function],
+          "getActions": [Function],
+          "getState": [Function],
+          "replaceReducer": [Function],
+          "subscribe": [Function],
+        }
+      }
+    >
+      <UserFollowersComponent
+        fetchUserFollowersRequest={[Function]}
+        followers={
+          Array [
+            Object {
+              "avatar_url": "https://vokrug.tv/pic/person/2/3/8/8/23887ed0f336731e4c62eedcb25bf4d0.jpeg",
+              "login": "FakeAvatar1337",
+            },
+          ]
+        }
+        store={
+          Object {
+            "clearActions": [Function],
+            "dispatch": [Function],
+            "getActions": [Function],
+            "getState": [Function],
+            "replaceReducer": [Function],
+            "subscribe": [Function],
+          }
+        }
+        storeSubscription={
+          Subscription {
+            "listeners": Object {
+              "clear": [Function],
+              "get": [Function],
+              "notify": [Function],
+              "subscribe": [Function],
+            },
+            "onStateChange": [Function],
+            "parentSub": undefined,
+            "store": Object {
+              "clearActions": [Function],
+              "dispatch": [Function],
+              "getActions": [Function],
+              "getState": [Function],
+              "replaceReducer": [Function],
+              "subscribe": [Function],
+            },
+            "unsubscribe": [Function],
+          }
+        }
+        userLogin=""
+      >
+        <div>
+          <ul>
+            <li>
+              <Link
+                replace={false}
+                to="/user/followers"
+              >
+                <a
+                  href="/user/followers"
+                  onClick={[Function]}
+                >
+                  User followers
+                </a>
+              </Link>
+            </li>
+            <li>
+              <Link
+                replace={false}
+                to="/user/repos"
+              >
+                <a
+                  href="/user/repos"
+                  onClick={[Function]}
+                >
+                  User repositories
+                </a>
+              </Link>
+            </li>
+          </ul>
+          <h2>
+            Followers
+          </h2>
+          <h3>
+            Empty
+          </h3>
+        </div>
+      </UserFollowersComponent>
+    </Connect(UserFollowersComponent)>
+  </Router>
+</BrowserRouter>
+`;

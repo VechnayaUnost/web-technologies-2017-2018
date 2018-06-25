@@ -1,0 +1,116 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`BotComponent component test BotComponent component rendered succesfully 1`] = `
+<Connect(BotComponent)
+  store={
+    Object {
+      "clearActions": [Function],
+      "dispatch": [Function],
+      "getActions": [Function],
+      "getState": [Function],
+      "replaceReducer": [Function],
+      "subscribe": [Function],
+    }
+  }
+>
+  <BotComponent
+    dispatch={[Function]}
+    store={
+      Object {
+        "clearActions": [Function],
+        "dispatch": [Function],
+        "getActions": [Function],
+        "getState": [Function],
+        "replaceReducer": [Function],
+        "subscribe": [Function],
+      }
+    }
+    storeSubscription={
+      Subscription {
+        "listeners": Object {
+          "clear": [Function],
+          "get": [Function],
+          "notify": [Function],
+          "subscribe": [Function],
+        },
+        "onStateChange": [Function],
+        "parentSub": undefined,
+        "store": Object {
+          "clearActions": [Function],
+          "dispatch": [Function],
+          "getActions": [Function],
+          "getState": [Function],
+          "replaceReducer": [Function],
+          "subscribe": [Function],
+        },
+        "unsubscribe": [Function],
+      }
+    }
+    userCompany="AvatarInc"
+    userEmail="neytiri@avatar.com"
+    userLocation="Pandora Planet"
+    userSocial="@neyney"
+  >
+    <div
+      className="BioComponent"
+    >
+      <ImageComponent
+        icon="@neyney"
+      >
+        <div
+          className="BioComponent"
+        >
+          <img
+            src="@neyney"
+          />
+        </div>
+      </ImageComponent>
+      <h6>
+        @neyney
+      </h6>
+      <ImageComponent
+        icon="AvatarInc"
+      >
+        <div
+          className="BioComponent"
+        >
+          <img
+            src="AvatarInc"
+          />
+        </div>
+      </ImageComponent>
+      <h6>
+        AvatarInc
+      </h6>
+      <ImageComponent
+        icon="Pandora Planet"
+      >
+        <div
+          className="BioComponent"
+        >
+          <img
+            src="Pandora Planet"
+          />
+        </div>
+      </ImageComponent>
+      <h6>
+        Pandora Planet
+      </h6>
+      <ImageComponent
+        icon="neytiri@avatar.com"
+      >
+        <div
+          className="BioComponent"
+        >
+          <img
+            src="neytiri@avatar.com"
+          />
+        </div>
+      </ImageComponent>
+      <h6>
+        neytiri@avatar.com
+      </h6>
+    </div>
+  </BotComponent>
+</Connect(BotComponent)>
+`;

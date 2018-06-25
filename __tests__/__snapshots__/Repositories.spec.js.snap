@@ -1,0 +1,271 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Repositories component test Repositories component rendered succesfully 1`] = `
+<Connect(Repositories)
+  store={
+    Object {
+      "clearActions": [Function],
+      "dispatch": [Function],
+      "getActions": [Function],
+      "getState": [Function],
+      "replaceReducer": [Function],
+      "subscribe": [Function],
+    }
+  }
+>
+  <Repositories
+    fetchReposRequest={[Function]}
+    repositories={
+      Array [
+        Object {
+          "archived": false,
+          "description": "Creates Avatar skeleton with some preinstalled options",
+          "fork": true,
+          "language": "C#",
+          "name": "AvatarSkeleton",
+          "stargazers_count": 321,
+          "watchers_count": 123,
+        },
+        Object {
+          "archived": true,
+          "description": "Avatar mount connection is easier with this tool",
+          "fork": false,
+          "language": "Java",
+          "name": "AvatarMountConnection",
+          "stargazers_count": 543,
+          "watchers_count": 345,
+        },
+        Object {
+          "archived": false,
+          "description": "Barrack project for human soldiers",
+          "fork": false,
+          "language": "Paper&Pen",
+          "name": "SoldiersBarracks",
+          "stargazers_count": 2,
+          "watchers_count": 1,
+        },
+      ]
+    }
+    store={
+      Object {
+        "clearActions": [Function],
+        "dispatch": [Function],
+        "getActions": [Function],
+        "getState": [Function],
+        "replaceReducer": [Function],
+        "subscribe": [Function],
+      }
+    }
+    storeSubscription={
+      Subscription {
+        "listeners": Object {
+          "clear": [Function],
+          "get": [Function],
+          "notify": [Function],
+          "subscribe": [Function],
+        },
+        "onStateChange": [Function],
+        "parentSub": undefined,
+        "store": Object {
+          "clearActions": [Function],
+          "dispatch": [Function],
+          "getActions": [Function],
+          "getState": [Function],
+          "replaceReducer": [Function],
+          "subscribe": [Function],
+        },
+        "unsubscribe": [Function],
+      }
+    }
+  >
+    <div>
+      <h1>
+        Repositories
+      </h1>
+      <div
+        className="inputs"
+      >
+        <input
+          onChange={[Function]}
+          onKeyDown={[Function]}
+          placeholder="Repositories"
+          type="text"
+        />
+        <button
+          onClick={[Function]}
+        >
+          Search
+        </button>
+      </div>
+      <ReposList
+        repositories={
+          Array [
+            Object {
+              "archived": false,
+              "description": "Creates Avatar skeleton with some preinstalled options",
+              "fork": true,
+              "language": "C#",
+              "name": "AvatarSkeleton",
+              "stargazers_count": 321,
+              "watchers_count": 123,
+            },
+            Object {
+              "archived": true,
+              "description": "Avatar mount connection is easier with this tool",
+              "fork": false,
+              "language": "Java",
+              "name": "AvatarMountConnection",
+              "stargazers_count": 543,
+              "watchers_count": 345,
+            },
+            Object {
+              "archived": false,
+              "description": "Barrack project for human soldiers",
+              "fork": false,
+              "language": "Paper&Pen",
+              "name": "SoldiersBarracks",
+              "stargazers_count": 2,
+              "watchers_count": 1,
+            },
+          ]
+        }
+      >
+        <ul>
+          <Repo
+            repo={
+              Object {
+                "archived": false,
+                "description": "Creates Avatar skeleton with some preinstalled options",
+                "fork": true,
+                "language": "C#",
+                "name": "AvatarSkeleton",
+                "stargazers_count": 321,
+                "watchers_count": 123,
+              }
+            }
+          >
+            <li
+              className="repo"
+            >
+              <div
+                className="repo-description"
+              >
+                <h3>
+                  AvatarSkeleton
+                </h3>
+                <p>
+                  Creates Avatar skeleton with some preinstalled options
+                </p>
+              </div>
+              <div
+                className="repo-stars-lang"
+              >
+                <span
+                  className="repo-lang"
+                >
+                  Language: 
+                  C#
+                </span>
+                <span
+                  className="repo-stars"
+                >
+                  Stars: 
+                  321
+                </span>
+              </div>
+            </li>
+          </Repo>
+          <Repo
+            repo={
+              Object {
+                "archived": true,
+                "description": "Avatar mount connection is easier with this tool",
+                "fork": false,
+                "language": "Java",
+                "name": "AvatarMountConnection",
+                "stargazers_count": 543,
+                "watchers_count": 345,
+              }
+            }
+          >
+            <li
+              className="repo"
+            >
+              <div
+                className="repo-description"
+              >
+                <h3>
+                  AvatarMountConnection
+                </h3>
+                <p>
+                  Avatar mount connection is easier with this tool
+                </p>
+              </div>
+              <div
+                className="repo-stars-lang"
+              >
+                <span
+                  className="repo-lang"
+                >
+                  Language: 
+                  Java
+                </span>
+                <span
+                  className="repo-stars"
+                >
+                  Stars: 
+                  543
+                </span>
+              </div>
+            </li>
+          </Repo>
+          <Repo
+            repo={
+              Object {
+                "archived": false,
+                "description": "Barrack project for human soldiers",
+                "fork": false,
+                "language": "Paper&Pen",
+                "name": "SoldiersBarracks",
+                "stargazers_count": 2,
+                "watchers_count": 1,
+              }
+            }
+          >
+            <li
+              className="repo"
+            >
+              <div
+                className="repo-description"
+              >
+                <h3>
+                  SoldiersBarracks
+                </h3>
+                <p>
+                  Barrack project for human soldiers
+                </p>
+              </div>
+              <div
+                className="repo-stars-lang"
+              >
+                <span
+                  className="repo-lang"
+                >
+                  Language: 
+                  Paper&Pen
+                </span>
+                <span
+                  className="repo-stars"
+                >
+                  Stars: 
+                  2
+                </span>
+              </div>
+            </li>
+          </Repo>
+        </ul>
+      </ReposList>
+    </div>
+  </Repositories>
+</Connect(Repositories)>
+`;

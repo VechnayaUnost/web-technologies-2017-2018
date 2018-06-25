@@ -1,0 +1,45 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Repo component test Repo component rendered succesfully 1`] = `
+<Repo
+  repo={
+    Object {
+      "description": "Creates Avatar skeleton with some preinstalled options",
+      "language": "C#",
+      "name": "AvatarSkeleton",
+      "stargazers_count": 321,
+    }
+  }
+>
+  <li
+    className="repo"
+  >
+    <div
+      className="repo-description"
+    >
+      <h3>
+        AvatarSkeleton
+      </h3>
+      <p>
+        Creates Avatar skeleton with some preinstalled options
+      </p>
+    </div>
+    <div
+      className="repo-stars-lang"
+    >
+      <span
+        className="repo-lang"
+      >
+        Language: 
+        C#
+      </span>
+      <span
+        className="repo-stars"
+      >
+        Stars: 
+        321
+      </span>
+    </div>
+  </li>
+</Repo>
+`;

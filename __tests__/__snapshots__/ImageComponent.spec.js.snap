@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ImageComponent component test ImageComponent component rendered succesfully 1`] = `
+<ImageComponent
+  props={
+    Object {
+      "icon": "twitter",
+      "userSocial": "@neyney",
+    }
+  }
+>
+  <div />
+</ImageComponent>
+`;

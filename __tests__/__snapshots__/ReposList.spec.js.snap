@@ -1,0 +1,107 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ReposList component test ReposList component rendered succesfully 1`] = `
+<ReposList
+  repositories={
+    Array [
+      Object {
+        "description": "Creates Avatar skeleton with some preinstalled options",
+        "language": "C#",
+        "name": "AvatarSkeleton",
+        "stargazers_count": 321,
+      },
+      Object {
+        "description": "Avatar mount connection is easier with this tool",
+        "language": "Java",
+        "name": "AvatarMountConnection",
+        "stargazers_count": 543,
+      },
+    ]
+  }
+>
+  <ul>
+    <Repo
+      repo={
+        Object {
+          "description": "Creates Avatar skeleton with some preinstalled options",
+          "language": "C#",
+          "name": "AvatarSkeleton",
+          "stargazers_count": 321,
+        }
+      }
+    >
+      <li
+        className="repo"
+      >
+        <div
+          className="repo-description"
+        >
+          <h3>
+            AvatarSkeleton
+          </h3>
+          <p>
+            Creates Avatar skeleton with some preinstalled options
+          </p>
+        </div>
+        <div
+          className="repo-stars-lang"
+        >
+          <span
+            className="repo-lang"
+          >
+            Language: 
+            C#
+          </span>
+          <span
+            className="repo-stars"
+          >
+            Stars: 
+            321
+          </span>
+        </div>
+      </li>
+    </Repo>
+    <Repo
+      repo={
+        Object {
+          "description": "Avatar mount connection is easier with this tool",
+          "language": "Java",
+          "name": "AvatarMountConnection",
+          "stargazers_count": 543,
+        }
+      }
+    >
+      <li
+        className="repo"
+      >
+        <div
+          className="repo-description"
+        >
+          <h3>
+            AvatarMountConnection
+          </h3>
+          <p>
+            Avatar mount connection is easier with this tool
+          </p>
+        </div>
+        <div
+          className="repo-stars-lang"
+        >
+          <span
+            className="repo-lang"
+          >
+            Language: 
+            Java
+          </span>
+          <span
+            className="repo-stars"
+          >
+            Stars: 
+            543
+          </span>
+        </div>
+      </li>
+    </Repo>
+  </ul>
+</ReposList>
+`;
