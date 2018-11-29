@@ -1,45 +1,42 @@
-const Sequelize = require('sequelize');
 const data = require('../config').data;
 const constants = require('../config/constants');
-const db = require('../db');
+const Movie = require('../db/models/movie').Movie;
 
 async function saveMovies() {
-  data.slice(10000, 16000).forEach(async (movie)=> {
-     await db.Movie.create(movie, { include: [db.GenreId] });
-  });
+  const saved = await Movie.insertMany(data);
+
+  return saved;
 }
 
 async function getAllFilms() {
-    return await db.Movie.findAll({include: [db.GenreId]});
+    return await Movie.find({});
 }
 
 async function getFilmById(id) {
-    return await db.Movie.findOne({
-      where: {
-        id
-      },
-      include: [db.GenreId]
-    });
+  return await Movie.findOne({ id });
 }
 
 async function getFilmByTitle(title) {
-    return await db.Movie.findOne({where: {
-      title: {
-        [Sequelize.Op.iLike]: '%' + title + '%'
-      }
-      },
-      include: [db.GenreId]
-    });
+  const foundMovies = await Movie.find({
+    title: new RegExp('^' + title + '$', 'i'),
+  });
+
+  return foundMovies;
 }
 
-async function getFilmsByPagination(offset, limit) {
-    return await db.Movie.findAll({offset, limit});
+async function getFilmsByPagination(skip, limit) {
+  return await Movie.find({}, null, {
+    skip,
+    limit,
+  });
 }
 
 async function getSortedFilms(field, direction) {
-    const order = [[field, direction === 'asc' ? 'ASC' : 'DESC']];
-
-    return await db.Movie.findAll({include: [db.GenreId], order});
+  return await Movie.find({}, null, {
+    sort: {
+      [field]: direction,
+    },
+  });
 }
 
 const services = {getAllFilms, getFilmById, getFilmByTitle, getFilmsByPagination, getSortedFilms, saveMovies};

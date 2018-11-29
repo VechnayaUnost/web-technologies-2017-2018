@@ -1,17 +1,21 @@
-const Sequelize = require('sequelize');
+const mongoose = require('mongoose');
 
-module.exports = function (sequelize) {
-  return sequelize.define('movie', {
-    vote_count: Sequelize.STRING,
-    vote_average: Sequelize.INTEGER,
-    title: Sequelize.STRING,
-    popularity: Sequelize.INTEGER,
-    poster_path: Sequelize.STRING,
-    original_language: Sequelize.STRING,
-    original_title: Sequelize.STRING,
-    backdrop_path: Sequelize.STRING,
-    adult: Sequelize.BOOLEAN,
-    overview: Sequelize.STRING(1000),
-    release_date: Sequelize.STRING,
-  })
-}
+const Movie = new mongoose.Schema({
+  id: Number,
+  vote_count: Number,
+  vote_average: Number,
+  title: String,
+  popularity: Number,
+  poster_path: String,
+  original_language: String,
+  original_title: String,
+  genre_ids: {
+    type: [],
+  },
+  backdrop_path: String,
+  adult: Boolean,
+  overview: String,
+  release_date: String,
+});
+
+exports.Movie = mongoose.model('Movie', Movie);

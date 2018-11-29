@@ -2,7 +2,8 @@ const express = require('express');
 const app = express();
 
 const constants = require('./config/constants');
-const db = require('./db').sequelize;
+const services = require('./services/services');
+const db = require('./db');
 
 const router = require('./routes/route');
 app.use('/', router);
@@ -11,11 +12,9 @@ require('dotenv').config();
 
 const port = process.env.PORT || 3000;
 
-db.authenticate().then(() => {
+db.init().then(() => {
   app.listen(port, () => {
     console.log(constants.LISTENING_MESSAGE + port);
   });
-}).catch((err) => {
-    console.log(err);
-    console.log('Database is not connected');
-})
+});
+
